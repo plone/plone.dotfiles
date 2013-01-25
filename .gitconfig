@@ -1,0 +1,43 @@
+# set your user info
+[user]
+    name = YOUR NAME
+    email = YOUR EMAIL
+
+# pretty colors, yay!
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+
+# useful aliases
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --branches --remotes
+
+# misc settings
+[core]
+    excludesfile = /PATH/TO/YOUR/HOME/FOLDER/.gitignore
+
+    # set your prefered editor
+    editor = nano
+
+    # OS X users only!
+    # askpass = /PATH/TO/YOUR/HOME/FOLDER/git-password
+
+# GitHub credentials
+[github]
+    user = YOUR GITHUB USERNAME
+    token = YOUR GITHUB TOKEN
+
+# OS X users only!
+#[credential]
+#    helper = osxkeychain
+
+# confire git to always add '--rebase' to git pull, to maintain nicer history
+# read more about it at http://gitready.com/advanced/2009/02/11/pull-with-rebase.html
+# you can override this with the '--no-rebase' switch
+[branch]
+    autosetuprebase = always
