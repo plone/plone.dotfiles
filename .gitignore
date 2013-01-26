@@ -38,6 +38,11 @@
 ehthumbs.db
 Icon?
 Thumbs.db
+*.tmproj
+
+# Other VCSes #
+###############
+.svn
 
 # Python projects related #
 ###########################
@@ -48,3 +53,5 @@ Thumbs.db
 *.zpt.py
 *.html.py
 *.egg
+.mr.developer.cfg
+.installed.cfg
