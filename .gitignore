@@ -40,6 +40,10 @@ Icon?
 Thumbs.db
 *.tmproj
 
+# Editor backup files #
+#######################
+*~
+
 # Other VCSes #
 ###############
 .svn
