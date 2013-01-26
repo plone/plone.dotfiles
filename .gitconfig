@@ -48,3 +48,10 @@
 # you can override this with the '--no-rebase' switch
 [branch]
     autosetuprebase = always
+
+# Disabling fast-forward merges creates merge-commits on "git merge" even
+# when fast-forward merging (no merge-commit) would be possible.
+# This gives us an explicit git log where every merge is visible.
+# It does not impact "git pull".
+[merge]
+    ff = false
