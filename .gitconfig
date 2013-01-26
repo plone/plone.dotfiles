@@ -15,6 +15,10 @@
     ci = commit
     br = branch
     co = checkout
+    df = diff
+    dfs = diff --staged
+
+    # A log of commits indicating where various branches are currently pointing.
     lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --branches --remotes
 
 # misc settings
