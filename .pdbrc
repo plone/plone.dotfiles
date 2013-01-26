@@ -1,0 +1,9 @@
+alias inspect import inspect;print inspect.getsource(%1)
+alias i import inspect;print inspect.getsource(%1)
+alias h !print help(%1)
+alias help !print help(%1)
+alias ppo pp %1.__dict__
+alias ppio pp [a.__dict__ for a in %1]
+
+import rlcompleter
+pdb.Pdb.complete = rlcompleter.Completer(locals()).complete
