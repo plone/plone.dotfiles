@@ -21,6 +21,12 @@
     # A log of commits indicating where various branches are currently pointing.
     lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --branches --remotes
 
+    # "git weburl" prints the URL of the github project page for repositories hosted on github.
+    weburl = !git config --get remote.origin.url | sed -e 's/git:\\/\\/github.com/https:\\/\\/github.com/' -e 's/git@github.com:/https:\\/\\/github.com\\//' -e 's/\\.git$//'
+    # "git browse" opens the github project page of this repository in the browser.
+    browse = !open `git weburl`
+
+
 # misc settings
 [core]
     excludesfile = /PATH/TO/YOUR/HOME/FOLDER/.gitignore
