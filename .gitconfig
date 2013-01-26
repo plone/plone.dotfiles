@@ -43,7 +43,7 @@
 #[credential]
 #    helper = osxkeychain
 
-# confire git to always add '--rebase' to git pull, to maintain nicer history
+# configure git to always add '--rebase' to git pull, to maintain nicer history
 # read more about it at http://gitready.com/advanced/2009/02/11/pull-with-rebase.html
 # you can override this with the '--no-rebase' switch
 [branch]
