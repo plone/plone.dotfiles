@@ -1,9 +1,16 @@
+# See http://docs.python.org/2/library/pdb.html#id2 for the structure of this file.
+
+# 'inspect x' will print the source code for a method, class or function.
 alias inspect import inspect;print inspect.getsource(%1)
 alias i import inspect;print inspect.getsource(%1)
-alias h !print help(%1)
+# 'help x' prints the docstring on an object (and signature for callables)
 alias help !print help(%1)
+alias h !print help(%1)
+# For ordinary Python objects, ppo will pretty-print members and their values.
 alias ppo pp %1.__dict__
+# ppio runs ppo over a sequence of objects
 alias ppio pp [a.__dict__ for a in %1]
 
-import rlcompleter
-pdb.Pdb.complete = rlcompleter.Completer(locals()).complete
+# This tries to enable tab-completion of some identifiers.
+!import rlcompleter
+!pdb.Pdb.complete = rlcompleter.Completer(locals()).complete
