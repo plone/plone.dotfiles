@@ -64,3 +64,9 @@ Thumbs.db
 #########################
 .project
 .pydevproject
+.settings
+
+# Buildout generated folders #
+##############################
+bin
+parts
