@@ -70,3 +70,6 @@ Thumbs.db
 ##############################
 bin
 parts
+develop-eggs
+var
+
