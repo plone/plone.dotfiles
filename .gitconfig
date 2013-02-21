@@ -11,12 +11,19 @@
 
 # useful aliases
 [alias]
+    ap = add -p
+    dc = diff --cached
     st = status
     ci = commit
+    cia = commit -v -a
+    cp = cherry-pick
     br = branch
     co = checkout
     df = diff
     dfs = diff --staged
+    l = log
+    ll = log -p
+    reha = reset --hard
 
     # A log of commits indicating where various branches are currently pointing.
     lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --branches --remotes
@@ -25,7 +32,6 @@
     weburl = !git config --get remote.origin.url | sed -e 's/git:\\/\\/github.com/https:\\/\\/github.com/' -e 's/git@github.com:/https:\\/\\/github.com\\//' -e 's/\\.git$//'
     # "git browse" opens the github project page of this repository in the browser.
     browse = !open `git weburl`
-
 
 # misc settings
 [core]
