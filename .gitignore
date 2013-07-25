@@ -67,6 +67,13 @@ Thumbs.db
 .pydevproject
 .settings
 
+# other IDEs #
+##############
+# PyCharm
+.idea
+# Sublime Text 2
+.codeintel
+
 # Buildout generated folders #
 ##############################
 bin
