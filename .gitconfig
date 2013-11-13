@@ -32,6 +32,11 @@
     weburl = !git config --get remote.origin.url | sed -e 's/git:\\/\\/github.com/https:\\/\\/github.com/' -e 's/git@github.com:/https:\\/\\/github.com\\//' -e 's/\\.git$//'
     # "git browse" opens the github project page of this repository in the browser.
     browse = !open `git weburl`
+    
+    # search for a specific line of code in all commits in the repo.
+    # Example: to find when the line "constraint=someMethod," was commented out, use:
+    # git search '#constraint=someMethod,'
+    search = "!f() { git log -S$1 --pretty=oneline --abbrev-commit; }; f"
 
 # misc settings
 [core]
